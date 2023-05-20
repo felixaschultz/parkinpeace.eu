@@ -3,7 +3,7 @@ import "./Footer.css";
 export default function Footer(){
     const currentYear = new Date().getFullYear();
     return (<>
-        <footer>
+        <footer className="footer">
             &copy; {currentYear} Parkinpeace. All rights reserved.
         </footer>
     </>);
