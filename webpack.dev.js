@@ -10,7 +10,7 @@ module.exports = merge(common, {
     ignored: /node_modules/,
   },
   devServer: {
-    static: './dist',
+    static: './build',
     historyApiFallback: true,
   },
 });
