@@ -4,5 +4,6 @@ export default function Home(){
     return (<>
         <h2>Home</h2>
         <p>Hello, World!</p>
+        <p>This is a Webhook push test</p>
     </>)
 }
