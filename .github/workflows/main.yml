@@ -1,0 +1,28 @@
+name: Push to Production
+
+on:
+  push:
+    branches:
+      - production
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    # the checkout action persists the passed credentials by default
+    # subsequent git commands will pick them up automatically
+    - name: Checkout repository
+      uses: actions/checkout@production
+      with:
+        token: ${{secrets.PAT}}
+    - name: Set up Node.js
+      uses: actions/setup-node@v1.2.0
+      with:
+          node-version: '10.x'
+    - name: Install dependencies
+      run: npm install
+    - name: Compile build
+      run: npm run build  
+    - run: |
+        # do something
+        git push
