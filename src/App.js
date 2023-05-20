@@ -6,7 +6,7 @@ const Redirect = window.ReactRouterDOM.Redirect;
 
 import "./App.css";
 import Header from "./components/Header/Header.js";
-import Footer from "./components/Footer/Footer"; "./components/Footer/Footer.js";
+import Footer from "./components/Footer/Footer.js";
 import Home from "./components/Home/Home.js";
 
 export default function App(){

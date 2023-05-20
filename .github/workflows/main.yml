@@ -11,7 +11,7 @@ jobs:
     steps:
     # the checkout action persists the passed credentials by default
     # subsequent git commands will pick them up automatically
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@production
       with:
         token: ${{secrets.PAT}}
     - run: |
