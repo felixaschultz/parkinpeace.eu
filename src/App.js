@@ -7,7 +7,7 @@ const Redirect = window.ReactRouterDOM.Redirect;
 import "./App.css";
 import Header from "./components/Header/Header.js";
 import Footer from "./components/Footer/Footer.js";
-import DevContainer from "./components/DevContainer/DevContainer.js";
+import Home from "./components/Home/Home.js";
 
 export default function App(){
     return (<>
@@ -16,7 +16,7 @@ export default function App(){
                 <Header />
                 <Switch>
                     <Route path="/" exact>
-                        <DevContainer />
+                        <Home />
                     </Route>
                     <Redirect to="/" />
                 </Switch>
