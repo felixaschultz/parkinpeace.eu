@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages ghpage.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
     "csv-loader": "^2.1.1",
     "express": "^4.15.3",
     "file-loader": "^0.11.2",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^2.29.0",
     "style-loader": "^0.18.2",
     "webpack": ">=4.30.0",
